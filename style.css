@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(0, 0%, 26%);
+    color: hsl(220, 30%, 96%);
+    font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+}
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.mid-container> :not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.header__title {
+    display: inline-block;
+    background-color: hsl(238, 100%, 68%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+}
+
+.header__title--deprecated {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.non-deprecated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.non-deprecated__header {
+    text-align: center;
+}
+
+.deprecated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    flex: 0 0;
+    text-align: center;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    box-shadow: 0 14px 26px rgb(0 0 0 / 10%);
+    max-width: 50rem;
+}
+
+.card:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.card__header {
+    background-color: hsl(238, 100%, 68%);
+    padding: 0.5rem;
+}
+
+.card__header--deprecated {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.card__title {
+    margin: 0;
+}
+
+.card__body {
+    background-color: hsl(0, 0%, 37%);
+    padding: 1rem;
+}
+
+#test {
+    overflow: auto;
+}
+
+@media (min-width: 43.75em) {
+    .mid-container {
+        max-width: initial;
+    }
+    .non-deprecated {
+        flex-direction: row;
+    }
+    .deprecated {
+        flex-direction: row;
+    }
+    .card {
+        flex: 0 0 12.5rem;
+    }
+    .card:not(:last-of-type) {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KeyCode on keydown event.">
+    <title>KeyCode</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="mid-container">
+            <div class="header">
+                <h2 class="header__title">Use this!</h2>
+            </div>
+            <div class="non-deprecated">
+                <article class="card">
+                    <div class="card__header">
+                        <h5 class="card__title">event.isTrusted</h5>
+                    </div>
+                    <div class="card__body">
+                        <div id="js-isTrusted">Press a key</div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <h5 class="card__title">event.code</h5>
+                    </div>
+                    <div class="card__body">
+                        <div id="js-code">Press a key</div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <h5 class="card__title">event.key</h5>
+                    </div>
+                    <div class="card__body">
+                        <div id="js-key">Press a key</div>
+                    </div>
+                </article>
+            </div>
+            <div class="header">
+                <h2 class="header__title header__title--deprecated">Not this! (deprecated)</h2>
+            </div>
+            <div class="deprecated">
+                <article class="card">
+                    <div class="card__header card__header--deprecated">
+                        <h5 class="card__title">event.keyCode</h5>
+                    </div>
+                    <div class="card__body">
+                        <div id="js-keyCode">Press a key</div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header card__header--deprecated">
+                        <h5 class="card__title">event.which</h5>
+                    </div>
+                    <div class="card__body">
+                        <div id="js-which">Press a key</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
